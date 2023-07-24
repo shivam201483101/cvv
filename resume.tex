@@ -1,0 +1,161 @@
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage{tikz}
+\usetikzlibrary{calc,positioning}
+\usepackage{graphicx}
+
+\begin{document}
+
+
+
+\introduction[
+    fullname=Shivam Pandey,
+    email=shivampandey2903@gmail.com,
+    phone=8454038839,
+    linkedin=linkedin.com/in/shivam-pandey-a99296213,
+]
+\begin{center}Click--\href{https://myresume-web-dev.vercel.app/}{\textbf{\textcolor{blue}{My Portfolio}}}{----} \href{https://linktr.ee/shivam2903}{\textbf{\textcolor{blue}{Social}}}{----}\href{https://github.com/shivam201483101}{\textbf{\textcolor{blue}{Github}}}{----}\href{https://www.leetcode.com/shivam_2903}{\textbf{\textcolor{blue}{Leetcode}}}
+\end{center}
+
+
+\summary{Computer Science student with experience in Full Stack MERN development, Blockchain developer and Data Science role. I had developed complex web applications that are both functional and aesthetically pleasing. I am confident in my ability to succeed any development role. }
+
+\education{
+    \educationItem[
+        university= University of Mumbai{,},
+        college= Vidyavardhini College{,}Vasai,
+        graduation=May 2024,
+        grade=9.1 CGPA,
+        program=B.Tech{,} Computer Science Engineering,
+        coursework=System Design OOPS DSA {,} Operating System Computer Networks  SDLC
+        ]
+}
+\begin{tikz}[remember picture, overlay]
+  \node at ($(current page.north east)+(-1.5cm,-1.75cm)$) [circle, draw, black, line width=0.5pt, minimum size=2.2cm,
+    text=white,
+    path picture={
+      \node at (path picture bounding box.center) {
+        \includegraphics[width=2.4cm]{profilee.jpg}
+      };
+    }
+  ]{};
+\end{tikz}
+
+\skills{
+    \skillItem[
+        category=Web development,
+        skills=React JS{,} Next JS{,}Node JS{,}HTML{,}Javascript{,}CSS
+    ] \\
+    \skillItem[
+        category=Block Chain Development,
+        skills=Solidity{,} Truffle{,} Ganache{,} Web3 JS
+    ] \\
+    \skillItem[
+        category=Programming,
+        skills=Python{,} C{,} C++
+    ] 
+    \\
+    \skillItem[
+       category=Database,
+        skills=MongoDB {,} MySql   
+    ]\\
+    \skillItem[
+        category=Tools,
+        skills=VsCode{,}Remix IDE{,}MetaMask{,} Github
+    ]
+}
+
+\begin{workSection}{Experience}
+    \experienceItem[
+        company=Social Summer of Code (SSOC 23),
+        location=Hack2skill,
+        position=Contributor,
+        duration=June 2023 – Aug 2023
+    ]
+     \begin{itemize}
+        \itemsep -6pt {} 
+        \item Contributed as well as added my own  project  FIR system on the blockchain while collaborating  with the team.
+        \item Expanded my network and contributed to meaningful projects that impact the broader developer ecosystem.
+     \end{itemize}
+     
+    \experienceItem[
+        company=Codesoft,
+        location=IT{,} Consulting,
+        position=Data Science Intern,
+        duration=June 2023 – July 2023
+    ]
+    \begin{itemize}
+        \itemsep -6pt {} 
+        \item Used statistical models  to analyze{,}preprocess{,}train dataset .(Numpy{,}Pandas{,}Matplotlib{,}Scikit{-}learn{,}GCollab)
+        \item Collaborated with a talented team of data scientists.
+     \end{itemize}
+     
+\end{workSection}
+
+\begin{workSection}{Academic projects}
+     \customItem[
+        title=Micro-Job marketplace\href{https://microjob-marketplace.onrender.com/}{\textbf{\textcolor{blue}{Link}}},
+        duration=May 2023-present,
+        keyHighlight=Collaborated in a team of three to design & build a MERN stack web app 
+]
+     \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {} 
+        \item Platform that connects individuals seeking small tasks or services with skilled Person willing to perform them.
+        \item It facilitates secure payment transactions,communication among user,rating system to ensure reliability, quality.
+     \end{itemize}
+\customItem[
+title=Fitness Website\href{https://excersise-app.netlify.app/}{\textbf{\textcolor{blue}{Link}}},
+duration=Fall 2022,
+keyHighlight=Build a Perfect Gym Companion website using various Rapid Apis like Exercise DB and youtube search api.
+]
+ \begin{itemize}
+\vspace{-0.5em}
+\itemsep -6pt{}
+\item 
+Enhanced our web development skills and learn various react library with team collaboration.
+\item Offers personalized exercise recommendations for different body parts, along with video tutorials
+\item It helps users tailor their workouts, learn proper exercise techniques, and achieve their fitness goals.
+ \end{itemize}
+
+
+
+
+
+     \customItem[
+        title=Algorithm Visualizer\href{https://shivam201483101.github.io/Landing/}{\textbf{\textcolor{blue}{Link}}},
+        duration=Spring 2022,
+        keyHighlight=Led team of three to design and develop an Algorithm Visualizer.       
+     ]
+     \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {} 
+        \item Implemented all types of  Sorting algorithms{,}N Queen{,}Dfs Bfs A*{,}Binary tree{,}Path Finding.
+     \end{itemize}
+\end{workSection}
+
+\begin{workSection}{Activities}
+     \customItem[
+        title=BitByte Go(Vcet),
+        keyHighlight=Multiple leadership roles,
+        duration=Dec 2022– Present
+    ]
+     \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {} 
+        \item Organized events and designed contests to encourage students in competitive programming
+     \end{itemize}
+
+      \customItem[
+        title=Airnova(Vcet),
+        keyHighlight=Multiple roles,
+        duration=Dec 2020– May 2022
+    ]
+     \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {} 
+        \item Trained and worked on Ai model for Gesture control Drone using open cv.
+
+     \end{itemize}
+\end{workSection}
+
+\end{document}
